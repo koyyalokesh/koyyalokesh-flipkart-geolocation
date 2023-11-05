@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Flipkart
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link rel="icon" href="https://seeklogo.com/images/F/flipkart-logo-3F33927DAA-seeklogo.com.png">
+        <link rel="stylesheet" href="flip.css" type="text/css">
+        <script src="flip.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+                
+        
+    </head>
+
+    <body>
+        <nav class="flipkart-navbar">
+            
+                    
+            
+                    <div class="logo">
+                        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/flipkart-095e08.svg" width="135px">
+                        
+                    </div>
+                    <div class="explore-plus">
+                        <a>
+                            <span class="explore-color">Explore</span>
+                            <span class="plus-color">Plus</span>
+                            <img class="star-logo" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/plus-brand-bc165b.svg">
+                        </a>
+
+                    </div>
+                    <div class="search-container">
+                        <i class="fa-solid fa-magnifying-glass" width="24px" height="24px"></i>
+                        <input class="search" type="text" placeholder="Search for Products, Brands and More"/>
+                    </div>
+
+                    <div class="seller-container">
+                        <a>
+                        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg" width="25px" height="28px">
+                        </a>
+                    </div>
+                        <div class="seller">
+                            <a href="">Become a Seller</a>
+                        </div>
+
+                   <div class="sign-in-container">
+                        <div class="sign-in-logo">
+                            <a href="">
+                               <img src="	https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-815786.svg" width="24px" height="24px">
+                            </a>
+                        </div>
+                        <div class="sign-in">
+                            <a href="">Sign in</a>
+                            
+                        </div>
+                        
+                </div>
+
+                <div class="cart-container">
+                    <div class="cart-logo-container">
+                        <a>
+                        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg" width="24px" height="24px">
+                        </a>
+
+                    </div>
+                    <div class="cart">
+                        <a>Cart</a>
+                    </div>
+
+                </div>
+
+                <div class="darkmode_container">
+                    <button onClick="change_mode()">
+                        DarkMode
+                    </button>
+                </div>
+     </nav>
+
+
+               <!--<div class="main-container">-->
+                    
+                   
+                    <div class="frst-container">
+                        <div id="coupon">
+                            <img class="coupon_img" src="images/coupon.png">
+                           <button class="coupon_button" onClick="closeCoupon()">
+                                &times;
+                            </button>
+                      </div>
+                        
+                        <div class="frst-container-images">
+                            <img src="https://rukminim1.flixcart.com/flap/96/96/image/29327f40e9c4d26b.png?q=100" width="65px" height="64px">
+                            <div class="category-container">
+                                <span>Grocery</span>
+                            </div>
+                        </div>
+
+                        <div class="frst-container-images">
+                            <img src="https://rukminim1.flixcart.com/flap/96/96/image/22fddf3c7da4c4f4.png?q=100" width="65px" height="64px">
+                            <div class="category-container">
+                                <span>Mobiles</span>
+                            </div>
+                        </div>
+
+                        <div class="frst-container-images">
+                            <img src="https://rukminim1.flixcart.com/fk-p-flap/96/96/image/0d75b34f7d8fbcb3.png?q=100" width="65px" height="64px">
+                            <div class="category-container">
+                                <span>Fashion</span>
+                            </div>
+                        </div>
+
+                        <div class="frst-container-images">
+                            <img src="https://rukminim1.flixcart.com/flap/96/96/image/69c6589653afdb9a.png?q=100" width="65px" height="64px">
+                            <div class="category-container">
+                                <span>Electronics</span>
+                            </div>
+                        </div>
+
+                        <div class="home-container-images">
+                            <img src="https://rukminim1.flixcart.com/flap/96/96/image/ab7e2b022a4587dd.jpg?q=100" width="65px" height="64px">
+                            <div class="category-container">
+                                <span>Home&</span><br>
+                                <span>Furniture</span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="frst-container-images">
+                            <img src="https://rukminim1.flixcart.com/flap/96/96/image/0ff199d1bd27eb98.png?q=100" width="65px" height="64px">
+                            <div class="category-container">
+                                <span>Appliances</span>
+                            </div>
+                        </div>
+
+                        <div class="frst-container-images">
+                            <img src="https://rukminim1.flixcart.com/flap/96/96/image/71050627a56b4693.png?q=100" width="65px" height="64px">
+                            <div class="category-container">
+                                <span>Travel</span>
+                                
+                            </div>
+                        </div>
+
+                        <div class="home-container-images">
+                            <img src="https://rukminim1.flixcart.com/flap/96/96/image/dff3f7adcf3a90c6.png?q=100" width="65px" height="64px">
+                            <div class="category-container">
+                                <span>Beauty, Toys &</span><br>
+                                <span>More</span>
+                            </div>
+                        </div>
+
+                        <div class="frst-container-images">
+                            <img src="https://rukminim1.flixcart.com/fk-p-flap/96/96/image/05d708653beff580.png?q=100" width="65px" height="64px">
+                            
+                            <div class="category-container">
+                                <span>Two</span>
+                                <span>Wheelers</span>
+                            </div>
+                        </div>
+
+                                  
+                    </div>
+
+
+
+                  <div class="image-slider-container">
+                    
+                        <div id="devCarousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#devCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#devCarousel" data-slide-to="1"></li>
+                                <li data-target="#devCarousel" data-slide-to="2"></li>
+                                <li data-target="#devCarousel" data-slide-to="3"></li>
+                                <li data-target="#devCarousel" data-slide-to="4"></li>
+                                <li data-target="#devCarousel" data-slide-to="5"></li>
+                                <li data-target="#devCarousel" data-slide-to="6"></li>
+                            </ol>
+                            
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/157060918ffa1077.jpg?q=20"
+                                    alt="food" class="imgSlider" height="208px"/>
+                                    
+                                </div>
+
+                                <div class="item">
+                                    <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/1e48145459e339b1.jpg?q=20
+                                    " alt="food" class="imgSlider" height="208px"/>
+                                </div>
+
+                                <div class="item">
+                                    <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/8a89ee09acc1a9e5.jpg?q=20"
+                                     class="imgSlider" />
+                                </div>
+
+                                <div class="item">
+                                    <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/4529fd434a85c683.jpg?q=20"
+
+                                     class="imgSlider"/>
+                                </div>
+
+                                <div class="item">
+                                    <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/4cd6690ef44564f3.jpg?q=20"
+                                    class="imgSlider"/>
+                                </div>
+
+                                <div class="item">
+                                    <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/5ef4544fa7407fb0.jpg?q=20"
+                                     class="imgSlider" />
+                                </div>
+
+                                <div class="item">
+                                    <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/4801adbcf39acbc1.jpg?q=20"
+
+                                     class="imgSlider" />
+                                </div>
+
+                            </div>
+
+                            <a class="left carousel-control" href="#devCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+            
+                            <a class="right carousel-control" href="#devCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+            
+                            
+            
+            
+                         </div>
+
+
+                    </div>
+
+
+                  <!--Electronics-->
+                   
+                        <div class="electronics-container">
+
+                                <div class="left-container">
+                                       <div class="electronics-header-container">
+                                                <div class="electronics-header">
+                                                    <h1>Best Of Electronics</h1>
+                                                </div>
+                                                
+                                               <!--<button class="greater-button"> </button>-->
+                                        </div>
+
+                                        <div class="electronics-images-container">
+                                            <div class="images">
+                                                 
+                                                <img src="images/lokesh.webp">
+                                                
+
+                                                <div class="details-container">
+                                                   <p class="name">Printers</p>
+                                                     From ₹3999
+
+                                                </div>
+                                                  
+                                            </div>
+
+                                            <div class="images">
+                                                <img src="images/keyboard.webp">
+                                                <div class="keyboard-details-container">
+                                                    <p class="keyboard-name">Wireless Mouse & Keyboard</p>
+                                                      From ₹169
+ 
+                                                 </div>
+                                                
+                                            </div>
+
+                                            <div class="images">
+                                                <img src="images/usb.webp"/>
+                                                <div class="usb-details-container">
+                                                    <p class="usb-name">USB Gadjets</p>
+                                                       From ₹179
+ 
+                                                 </div>
+                                                  
+                                            </div>
+
+                                            <div class="images">
+                                                <img src="images/projectors.webp">
+                                                <div class="details-container">
+                                                    <p class="usb-name">Projectors</p>
+                                                       From ₹9999
+ 
+                                                 </div>
+
+                                          </div>
+
+                                          <div class="images">
+                                            <img src="images/router.webp">
+                                            <div class="details-container">
+                                                <p class="usb-name">Projectors</p>
+                                                   From ₹9999
+
+                                             </div>
+                                                
+
+                                          </div>
+
+                                        </div>
+
+
+                                            </div>
+
+                                                <div class="right-container">
+                                                    <img src="https://rukminim1.flixcart.com/fk-p-flap/470/720/image/d663cbddbbcb4ef6.jpg?q=20">
+                                            </div>
+    
+   
+                        </div>
+
+                        
+
+                                
+                             <!--beauty foods toys and more-->
+
+                        <div class="card-1-container">
+
+                               <div class="main-header-container">
+                                   <div class="header-container">
+                                        <h1>Beauty, Food, Toys & more</h1>
+                                        <!--<button class="greater-symbol">lo</button>-->
+ 
+                                   </div>
+                                </div>
+
+                            <div class="card1-images-container">
+                                <div class="card1-images">
+                                                
+                                    <img src="images/cycle.webp">
+                                    
+
+                                   <div class="card1-details-container">
+                                       <p class="card1-name">Geared Cycles</p>
+                                        <p class="card1-price">Upto 70 % Off</p>
+
+                                    </div>
+                                      
+                                </div>
+
+                                <div class="card1-images">
+                                    <img src="images/teddy.webp">
+                                    
+
+                                   <div class="card1-details-container">
+                                       <p class="card1-name">Soft Toys</p>
+                                        <p class="card1-price">Upto 70 % Off</p>
+
+                                    </div>
+   
+
+
+                                </div>
+                                <div class="card1-images">
+                                    <img src="images/tyre.webp">
+                                    
+
+                                   <div class="card1-details-container">
+                                       <p class="card1-name">Tyres</p>
+                                        <p class="card1-price">From ₹799</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="card1-images">
+                                    <img src="images/music-instruments.webp">
+                                    
+
+                                   <div class="card1-details-container">
+                                       <p class="card1-name">String Instruments</p>
+                                        <p class="card1-price">Up to 70% Off</p>
+
+                                    </div>
+
+
+
+                                </div>
+                                <div class="card1-images">
+                                    <img src="images/helmets.webp">
+                                    
+
+                                   <div class="card1-details-container">
+                                       <p class="card1-name">Rider Helmets</p>
+                                        <p class="card1-price">From ₹699</p>
+                                    </div>
+
+
+
+                                </div>
+                                <div class="card1-images">
+                                    <img src="images/honey.webp">
+                                    
+
+                                   <div class="card1-details-container">
+                                       <p class="card1-name">Honey</p>
+                                        <p class="card1-price">upto 75 % Off</p>
+
+                                    </div>
+
+                             </div>
+                                
+                                
+                            </div>
+                    
+                         </div>
+
+
+
+                         <!--Sports health care and more-->
+
+                        <div class="card-1-container">
+                            <div class="main-header-container">
+                                <div class="header-container">
+                                     <h1>Sports, Healthcare & more</h1>
+                                     <!--<button class="greater-symbol">lo</button>-->
+
+                                </div>
+                             </div>
+
+                             <div class="card1-images-container">
+                                   <div class="card2-images">
+                                      <img  src="images/dry-fruits.webp">
+                                      <div class="card2-details-container">
+                                       
+                                        <p class="card2-name">Dry Fruits</p>
+                                        <p class="card2-price">upto 75 % Off</p>
+ 
+                                      </div>
+
+                                   </div>
+
+                                  <div class="card2-images">
+                                        <img  src="images/food-spreads.webp">
+                                        <div class="card2-details-container">
+                                        
+                                        <p class="card2-name">Food-spreads</p>
+                                        <p class="card2-price">upto 75 % Off</p>
+
+                                        </div>
+
+                                  </div>
+
+                                  <div class="card2-images">
+                                    <img  src="images/car-pressure.webp">
+                                    <div class="card2-details-container">
+                                     
+                                      <p class="card2-name">car pressure washer</p>
+                                      <p class="card2-price">upto 65 % Off</p>
+
+                                    </div>
+
+                                  </div>
+
+                                  <div class="card2-images">
+                                        <img id="245"src="images/gym-essentials.webp">
+                                        <div class="card2-details-container">
+                                        
+                                        <p class="card2-name">Gym Essentials</p>
+                                        <p class="card2-price">From ₹139</p>
+
+                                        </div>
+
+                                  </div>
+
+                                  <div class="card2-images">
+                                    <img id="245"src="images/musical-toys.webp">
+                                    <div class="card2-details-container">
+                                    
+                                    <p class="card2-name">Musical Toys</p>
+                                    <p class="card2-price">Under ₹199</p>
+
+                                    </div>
+                                     
+
+                                  </div>
+
+                                  <div class="card2-images">
+                                    <img src="images/tricycles.webp">
+                                    <div class="card2-details-container">
+                                    
+                                    <p class="card2-name">Tricycles</p>
+                                    <p class="card2-price">Under ₹199</p>
+
+                                    </div>
+                                      
+
+                                  </div>
+
+                              </div>
+                                
+                        </div>
+
+                        <!--Home & kitchen essentials-->
+
+                        <div class="card-1-container">
+                                <div class="main-header-container">
+                                    <div class="header-container">
+                                        <h1>Home & Kitchen Essentials</h1>
+                                        <!--<button class="greater-symbol">lo</button>-->
+
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="card1-images-container">
+                                    <div class="card3-images">
+                                        <img src="images/wall-decor.webp">
+                                        <div class="card3-details-container">
+                                        
+                                        <p class="card3-name">Wall Decor Items</p>
+                                        <p class="card3-price">Upto 80% Offer</p>
+
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="card3-images">
+                                        <img src="images/showpieces.webp">
+                                        <div class="card3-details-container">
+                                        
+                                        <p class="card3-name">Showpieces</p>
+                                        <p class="card3-price">Upto 80% Offer</p>
+
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="card3-images">
+                                        <img src="images/bedcovers.webp">
+                                        <div class="card3-details-container">
+                                        
+                                        <p class="card3-name">Bed Covers</p>
+                                        <p class="card3-price">Under ₹199</p>
+
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="card3-images">
+                                        <img src="images/paintings.webp">
+                                        <div class="card3-details-container">
+                                        
+                                        <p class="card3-name">Paintings</p>
+                                        <p class="card3-price">Upto 80% Offer</p>
+
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="card3-images">
+                                        <img src="images/bulbs.webp">
+                                        <div class="card3-details-container">
+                                        
+                                        <p class="card3-name">Bulbs</p>
+                                        <p class="card3-price">Upto 80% Offer</p>
+
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="card3-images">
+                                        <img src="images/spiritual-items.webp">
+                                        <div class="card3-details-container">
+                                        
+                                        <p class="card3-name">Spiritual Items</p>
+                                        <p class="card3-price">Upto 80% Offer</p>
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+
+
+                        </div>
+
+                        <!--Top-Details-->
+
+                        <div class="card-1-container">
+                            <div class="main-header-container">
+                                <div class="header-container">
+                                    <h1>Top Deals</h1>
+                                    <!--<button class="greater-symbol">lo</button>-->
+
+                                </div>
+                            </div>
+                             <div class="card1-images-container">
+                                 <div class="card4-images">
+                                    <img src="images/sabse-amazing.webp">
+                                    <div class="card4-details-container">
+                                    
+                                    <p class="card4-name">Sabse Amazing Deals</p>
+                                    <p class="card4-price">From ₹199</p>
+
+                                    </div>
+
+                                 </div>
+
+                                 <div class="card4-images">
+                                    <img src="images/apple-ipads.webp">
+                                    <div class="card4-details-container">
+                                    
+                                    <p class="card4-name">Apple ipads</p>
+                                    <p class="card4-price">Shop Now!</p>
+
+                                    </div>
+
+                                 </div>
+
+                                 <div class="card4-images">
+                                    <img src="images/camera-bags.webp">
+                                    <div class="card4-details-container">
+                                    
+                                    <p class="card4-name">Camera Bags</p>
+                                    <p class="card4-price">Min 50% Off</p>
+
+                                    </div>
+
+                                 </div>
+
+                                 <div class="card4-images">
+                                    <img src="images/amazing-lehengas.webp">
+                                    <div class="card4-details-container">
+                                    
+                                    <p class="card4-name">Amazing Lehengas</p>
+                                    <p class="card4-price">Under ₹599</p>
+
+                                    </div>
+
+                                 </div>
+
+                                 <div class="card4-images">
+                                    <img src="images/kurta-sets.webp">
+                                    <div class="card4-details-container">
+                                    
+                                    <p class="card4-name">Kurta Sets</p>
+                                    <p class="card4-price">Min 50% Off</p>
+
+                                    </div>
+
+                                 </div>
+
+                                 <div class="card4-images">
+                                    <img src="images/sarees.webp">
+                                    <div class="card4-details-container">
+                                    
+                                    <p class="card4-name">Sarees</p>
+                                    <p class="card4-price">From ₹132</p>
+
+                                    </div>
+
+                                 </div>
+
+
+                             </div>
+
+                        </div>
+
+                        <div class="card-1-container">
+                                <div class="main-header-container">
+                                    <div class="header-container">
+                                        <h1>Pick Your Styles</h1>
+                                        <!--<button class="greater-symbol">lo</button>-->
+                                    </div>
+                                </div>
+
+                                <div class="card1-images-container">
+                                    <div class="card5-images">
+                                        <img src="images/sweatshirts.webp">
+                                        <div class="card5-details-container">
+                                            <p class="card5-name">Sweatshirts, Hoodies,</p>
+                                            <p class="card5-price">From ₹249</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card5-images">
+                                        <img src="images/us-polo.webp">
+                                        <div class="card5-details-container">
+                                            <p class="card5-name">U.S. Polo Assn</p>
+                                            <p class="card5-price">Min. 40% Off</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card5-images">
+                                        <img src="images/ketch.webp">
+                                        <div class="card5-details-container">
+                                            <p class="card5-name">Ketch, Mast & Harbour</p>
+                                            <p class="card5-price">From ₹399</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card5-images">
+                                        <img src="images/dailywear-sarees.webp">
+                                        <div class="card5-details-container">
+                                            <p class="card5-name">Dailywear Sarees</p>
+                                            <p class="card5-price">Min 80% Off</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card5-images">
+                                        <img src="images/being-human.webp">
+                                        <div class="card5-details-container">
+                                            <p class="card5-name">Being Human, Ruf & Tuf</p>
+                                            <p class="card5-price">Min. 50% Off</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card5-images">
+                                        <img src="images/crazy-deals.webp">
+                                        <div class="card5-details-container">
+                                            <p class="card5-name">Deals On Handbags</p>
+                                            <p class="card5-price">Min 60% Off</p>
+                                        </div>
+                                    </div>
+                               </div>
+                        </div>
+
+
+                    <!--Top deals on tv and appliances-->
+                    <div class="card-1-container">
+                        <div class="main-header-container">
+                            <div class="header-container">
+                                <h1>Top Deals On Tvs & Appliances</h1>
+                                <!--<button class="greater-symbol">lo</button>-->
+                            </div>
+                        </div>
+                        <div class="card1-images-container">                                    
+                                <div class="card6-images">
+                                    <img src="images/single-door-refrigerator.webp">
+                                    <div class="card6-details-container">
+                                        <p class="card6-name">Single Door Refrigerator</p>
+                                        <p class="card6-price">From ₹9,990</p>
+                                    </div>
+                                </div>
+
+                                <div class="card6-images">
+                                    <img src="images/big-washing-machines.webp">
+                                    <div class="card6-details-container">
+                                        <p class="card6-name">Big Washing Machines</p>
+                                        <p class="card6-price">Buy Now</p>
+                                    </div>
+                                </div>
+
+                                <div class="card6-images">
+                                    <img src="images/marq-refrigerator.webp">
+                                    <div class="card6-details-container">
+                                        <p class="card6-name">Marq Refrigerator</p>
+                                        <p class="card6-price">From ₹8,999</p>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="card6-images">
+                                    <img src="images/motorola-refrigerator.webp">
+                                    <div class="card6-details-container">
+                                        <p class="card6-name">Motorola Refrigerator</p>
+                                        <p class="card6-price">From ₹23,990</p>
+                                    </div>
+                                </div>
+
+                                <div class="card6-images">
+                                    <img src="images/godrej-refrigerator.webp">
+                                    <div class="card6-details-container">
+                                        <p class="card6-name">Godrej Refrigerator</p>
+                                        <p class="card6-price">From ₹7,240</p>
+                                    </div>
+                                </div>
+
+                                <div class="card6-images">
+                                    <img src="images/onida-refrigerator.webp">
+                                    <div class="card6-details-container">
+                                        <p class="card6-name">Onida Refrigerator</p>
+                                        <p class="card6-price">From ₹12,970</p>
+                                    </div>
+                                </div>
+                            
+                        </div>
+
+                     </div>
+
+                <!--</div>-->
+
+
+
+        <footer >
+            
+            <div class="left1-container">
+                <div class="left-container-group">
+                       <div class="footer-title">ABOUT</div>
+                       <a href="">Contact Us</a><br>
+                       <a href="">About Us</a><br>
+                       <a href="">Careers</a><br>
+                       <a href="">Flipkart Stories</a><br>
+                       <a href="">Press</a><br>
+                       <a href="">Flipkart Wholesale</a><br>
+                       <a href="">Cleartrip</a><br>
+                       <a href="">Corporate Information</a>
+                    
+                </div>
+
+                <div class="left-container-group">
+                       <div class="footer-title">HELP</div>
+                       <a href="">Payments</a><br>
+                       <a href="">Shipping</a><br>
+                       <a href=" ">Cancellation</a><br>
+                       <a href="">Returns</a><br>
+                       <a href="">FAQ</a><br>
+                       <a href=" ">Report Infringement</a><br>
+                </div>
+
+                <div class="left-container-group">
+                        <div class="footer-title">CONSUMER POLICY</div>
+                        <a href="">Cancellation &</a><br>
+                        <a href="">Returns</a><br>
+                        <a href="">Terms of Use</a><br>
+                        <a href="">Security</a><br>
+                        <a href="">Privacy</a><br>
+                        <a href="">Sitemap</a><br>
+                        <a href="">Grievance Redressal</a><br>
+                        <a href="">EPR Compliance</a><br>
+                </div>
+
+                <div class="left-container-group">
+                       <div class="footer-title">SOCIAL</div>
+                       <a href="">Facebook</a><br>
+                       <a href="">Twitter</a><br>
+                       <a href="">Youtuube</a>
+                       <div class="geolocation">
+
+                        <button onclick="geolocation()"> 🌍Location</button>
+                        <p id="out"></p>
+                        <p id="weather"></p>
+                    </div>
+                </div>
+                
+        
+            </div>
+
+
+          <!--  <div class="right1-container">
+                <div class="right-container-group">
+                       <div class="footer-title" id="right-title-1">Mail us:</div>
+                           <div class="right-details-1">
+                               <p>Flipkart Internet Private Limited,</p>
+                                <p>Buildings Alyssa, Begonia &</p>
+                                <p>Clove Embassy Tech Village,</p>
+                                <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+                                <p>Bengaluru, 560103,</p>
+                                <p>Karnataka, India</p>
+                             
+                           </div>
+
+                </div>
+
+                <div class="right-container-group">
+                       <div class="footer-title">Registered office address:</div>
+                            <div class="right-details-2">
+                                <p>Flipkart Internet Private Limited,</p>
+                                <p>Buildings Alyssa, Begonia &</p>
+                                <p>Clove Embassy Tech Village,</p>
+                                <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+                                <p>Bengaluru, 560103,</p>
+                                <p>Karnataka, India</p>
+                                <p>CIN : U51109KA2012PTC066107</p>
+                                <p>Telephone: 044-45614700</p>
+                            </div>
+                
+            </div>
+         </div>-->
+       </footer>
+
+
+            
+        
+
+
+
+        
+        
+
+        
+
+
+
+
+
+
+
+        
+
+    </body>
+    <script>
+        window.onload=onCoupon()
+
+
+        let x = document.getElementById('out');
+            let y = document.getElementById('weather');
+
+            function geolocation(){
+                if(navigator.geolocation){
+                    navigator.geolocation.getCurrentPosition(showPosition)
+                }else{
+                    x.innerText = "Geo Not Supported"
+                }
+            }
+
+            function showPosition(data){
+                console.log(data)
+                let lat = data.coords.latitude;
+                let lon = data.coords.longitude;
+                x.innerText =`Latitude is ${lat} and longitude is ${lon}`
+                const url =`https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${lon}&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`;
+                //api calling
+                fetch(url,{method:'GET'})
+                //return promise
+                .then((res) =>  res.json())
+                //resolve the promise
+                .then((data) => {
+                    console.log(data)
+                    let cityName = data.city.name;
+                    let temp = data.list[0].temp.day+" °C"
+                    y.innerText=`Weather of ${cityName} is ${temp}`
+                })
+             }
+
+
+        
+                    
+    </script>
+    
+</html>
